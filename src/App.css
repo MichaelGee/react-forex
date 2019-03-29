@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+body{
+  font-family: 'Merriweather', serif;
+}
+
 .navbar{
   background: #2950ff !important;
  
@@ -19,6 +24,9 @@ a, .nav-link {
 }
 
 #forex{
-  margin-right: 30%;
+  margin-right: 28%;
 }
 
+img{
+  width: 12%;
+}

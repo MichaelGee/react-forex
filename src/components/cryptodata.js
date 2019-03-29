@@ -6,21 +6,35 @@ import Infocard from "./infocard";
 class Cryptodata extends Component {
   state = {
     time: "",
-    EUR: "",
-    CNH: "",
-    JPY: "",
-    GBP: "",
-    AUD: "",
-    CAD: "",
-    CHF: "",
-    SEK: "",
-    NZD: "",
-    USD: ""
+    BTC_PRICE: "",
+    BTC_MKT: "",
+    BTC_TV: "",
+    BTC_CPCT: "",
+    ETH_PRICE: "",
+    ETH_MKT: "",
+    ETH_TV: "",
+    ETH_CPCT: "",
+    LTC_PRICE: "",
+    LTC_MKT: "",
+    LTC_TV: "",
+    LTC_CPCT: "",
+    XRP_PRICE: "",
+    XRP_MKT: "",
+    XRP_TV: "",
+    XRP_CPCT: "",
+    EOS_PRICE: "",
+    EOS_MKT: "",
+    EOS_TV: "",
+    EOS_CPCT: "",
+    TRX_PRICE: "",
+    TRX_MKT: "",
+    TRX_TV: "",
+    TRX_CPCT: ""
   };
 
   componentDidMount() {
     this.api_call();
-    /*setInterval(this.api_call, 60000);*/
+    setInterval(this.api_call, 3000);
   }
 
   api_call = () => {
@@ -37,12 +51,35 @@ class Cryptodata extends Component {
 
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,LTC,XRP,XLM,XMR&tsyms=USD`
+        `https://cors-anywhere.herokuapp.com/https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,LTC,XRP,EOS,TRX&tsyms=USD`
       )
       .then(res => {
         this.setState({
           time: res.headers.date,
-          USD: res.data.DISPLAY.BTC.USD.IMAGEURL
+          BTC_PRICE: res.data.DISPLAY.BTC.USD.PRICE,
+          BTC_MKT: res.data.DISPLAY.BTC.USD.MKTCAP,
+          BTC_TV: res.data.DISPLAY.BTC.USD.TOTALVOLUME24H,
+          BTC_CPCT: res.data.DISPLAY.BTC.USD.CHANGEPCT24HOUR,
+          ETH_PRICE: res.data.DISPLAY.ETH.USD.PRICE,
+          ETH_MKT: res.data.DISPLAY.ETH.USD.MKTCAP,
+          ETH_TV: res.data.DISPLAY.ETH.USD.TOTALVOLUME24H,
+          ETH_CPCT: res.data.DISPLAY.ETH.USD.CHANGEPCT24HOUR,
+          LTC_PRICE: res.data.DISPLAY.LTC.USD.PRICE,
+          LTC_MKT: res.data.DISPLAY.LTC.USD.MKTCAP,
+          LTC_TV: res.data.DISPLAY.LTC.USD.TOTALVOLUME24H,
+          LTC_CPCT: res.data.DISPLAY.LTC.USD.CHANGEPCT24HOUR,
+          XRP_PRICE: res.data.DISPLAY.XRP.USD.PRICE,
+          XRP_MKT: res.data.DISPLAY.XRP.USD.MKTCAP,
+          XRP_TV: res.data.DISPLAY.XRP.USD.TOTALVOLUME24H,
+          XRP_CPCT: res.data.DISPLAY.XRP.USD.CHANGEPCT24HOUR,
+          EOS_PRICE: res.data.DISPLAY.EOS.USD.PRICE,
+          EOS_MKT: res.data.DISPLAY.EOS.USD.MKTCAP,
+          EOS_TV: res.data.DISPLAY.EOS.USD.TOTALVOLUME24H,
+          EOS_CPCT: res.data.DISPLAY.EOS.USD.CHANGEPCT24HOUR,
+          TRX_PRICE: res.data.DISPLAY.TRX.USD.PRICE,
+          TRX_MKT: res.data.DISPLAY.TRX.USD.MKTCAP,
+          TRX_TV: res.data.DISPLAY.TRX.USD.TOTALVOLUME24H,
+          TRX_CPCT: res.data.DISPLAY.TRX.USD.CHANGEPCT24HOUR
         });
         console.log(res);
       })
@@ -55,8 +92,33 @@ class Cryptodata extends Component {
     return (
       <div>
         {/*<Line data={data} />*/}
-        <Infocard time={this.state.time} USD={this.state.USD} />
-        <Cryptcard USD={this.state.USD} />
+        <Infocard time={this.state.time} />
+        <Cryptcard
+          BTC_PRICE={this.state.BTC_PRICE}
+          BTC_MKT={this.state.BTC_MKT}
+          BTC_TV={this.state.BTC_TV}
+          BTC_CPCT={this.state.BTC_CPCT}
+          ETH_PRICE={this.state.ETH_PRICE}
+          ETH_MKT={this.state.ETH_MKT}
+          ETH_TV={this.state.ETH_TV}
+          ETH_CPCT={this.state.ETH_CPCT}
+          LTC_PRICE={this.state.LTC_PRICE}
+          LTC_MKT={this.state.LTC_MKT}
+          LTC_TV={this.state.LTC_TV}
+          LTC_CPCT={this.state.LTC_CPCT}
+          XRP_PRICE={this.state.XRP_PRICE}
+          XRP_MKT={this.state.XRP_MKT}
+          XRP_TV={this.state.XRP_TV}
+          XRP_CPCT={this.state.XRP_CPCT}
+          EOS_PRICE={this.state.EOS_PRICE}
+          EOS_MKT={this.state.EOS_MKT}
+          EOS_TV={this.state.EOS_TV}
+          EOS_CPCT={this.state.EOS_CPCT}
+          TRX_PRICE={this.state.TRX_PRICE}
+          TRX_MKT={this.state.TRX_MKT}
+          TRX_TV={this.state.TRX_TV}
+          TRX_CPCT={this.state.TRX_CPCT}
+        />
       </div>
     );
   }
