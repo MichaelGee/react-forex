@@ -34,21 +34,11 @@ class Cryptodata extends Component {
 
   componentDidMount() {
     this.api_call();
-    setInterval(this.api_call, 3000);
+    /*setInterval(this.api_call, 30000);*/
   }
 
   api_call = () => {
-    /*axios
-      .get(
-        `https://cors-anywhere.herokuapp.com/https://www.freeforexapi.com/api/live?`
-      )
-      .then(res => {
-       console.log( res.data );
-      })
-      .catch(error => {
-        console.log(error);
-      });*/
-
+  
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,LTC,XRP,EOS,TRX&tsyms=USD`
