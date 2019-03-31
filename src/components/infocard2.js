@@ -11,8 +11,7 @@ const Infocard2 = props => {
       <Card style={style.card}>
         <Card.Body>
           <p className='card-text text-center'>
-            ForeX gets you the latest figures in the exchange market, from
-            regular currencies to cryptocurrency.
+            The exchange rate for 10 major currencies and the Nigerian Naira.
           </p>
           <h5 className='text-center'>{props.time}</h5>
         </Card.Body>

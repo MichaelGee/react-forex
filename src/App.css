@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 body{
   font-family: 'Merriweather', serif;
 }
@@ -37,4 +38,8 @@ img{
 
 #datacard{
   margin-top: 20px;
+}
+
+p, h5. a{
+  font-family: 'Noto Serif', serif;
 }

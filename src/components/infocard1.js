@@ -11,11 +11,10 @@ class Infocard extends Component {
       <div>
         <Card style={style.card}>
           <Card.Body>
-            <p className="card-text text-center">
-              ForeX gets you the latest figures in the exchange market, from
-              regular currencies to cryptocurrency.
+            <p className='card-text text-center'>
+              Cryptocurrency rates in the market for 6 major coins.
             </p>
-            <h5 className="text-center">{this.props.time}</h5>
+            <h5 className='text-center'>{this.props.time}</h5>
           </Card.Body>
         </Card>
       </div>

@@ -92,7 +92,7 @@ const Forexcard = props => {
         </Row>
 
         <Row>
-          <Col sm>
+          <Col md={4}>
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - NZD</h1>
