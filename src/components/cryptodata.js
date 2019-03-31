@@ -34,7 +34,7 @@ class Cryptodata extends Component {
 
   componentDidMount() {
     this.api_call();
-    /*setInterval(this.api_call, 30000);*/
+    setInterval(this.api_call, 30000);
   }
 
   api_call = () => {

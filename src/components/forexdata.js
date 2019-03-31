@@ -19,7 +19,7 @@ export default class Forexdata extends Component {
 
   componentDidMount() {
     this.api_call();
-    /*setInterval(api_call(), 30000);*/
+    setInterval(api_call(), 30000);
   }
 
   api_call = () => {
