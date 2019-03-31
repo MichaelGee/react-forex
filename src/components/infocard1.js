@@ -16,8 +16,6 @@ class Infocard extends Component {
               regular currencies to cryptocurrency.
             </p>
             <h5 className="text-center">{this.props.time}</h5>
-            <h5 className="text-center">{this.props.EUR}</h5>
-            <h5 className="text-center">{this.props.USD}</h5>
           </Card.Body>
         </Card>
       </div>
