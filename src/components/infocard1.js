@@ -14,7 +14,7 @@ class Infocard extends Component {
             <p className='card-text text-center'>
               Cryptocurrency rates in the market for 6 major coins.
             </p>
-            <p>Data is updated every 30seconds</p>
+            <p className='card-text text-center'>Data is updated every 30seconds</p>
             <h5 className='text-center'>{this.props.time}</h5>
           </Card.Body>
         </Card>
