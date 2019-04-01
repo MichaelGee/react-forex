@@ -9,11 +9,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className='App'>
           <Bar />
           <Switch>
-            <Route path="/forex" component={Forex} />
-            <Route path="/crypto" component={Crypto} />
+            <Route exact path='/' component={Forex} />
+            <Route exact path='/forex' component={Forex} />
+            <Route path='/crypto' component={Crypto} />
           </Switch>
         </div>
       </Router>
