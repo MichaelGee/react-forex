@@ -13,6 +13,7 @@ const Infocard2 = props => {
           <p className='card-text text-center'>
             The exchange rate for 10 major currencies and the Nigerian Naira.
           </p>
+          <p>Data is updated every 30seconds</p>
           <h5 className='text-center'>{props.time}</h5>
         </Card.Body>
       </Card>
