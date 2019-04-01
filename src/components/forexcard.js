@@ -9,7 +9,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - NGN</h1>
-                <h5>Rate: ${props.NGN}</h5>
+                <h5>Rate: ₦{props.NGN}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -18,7 +18,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - EUR</h1>
-                <h5>Rate: ${props.EUR}</h5>
+                <h5>Rate: €{props.EUR}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -27,7 +27,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - CNH</h1>
-                <h5>Rate: ${props.CNH}</h5>
+                <h5>Rate: CNH{props.CNH}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -38,7 +38,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - JPY</h1>
-                <h5>Rate: ${props.JPY}</h5>
+                <h5>Rate: ¥{props.JPY}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -47,7 +47,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - GBP</h1>
-                <h5>Rate: ${props.GBP}</h5>
+                <h5>Rate: £{props.GBP}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -76,7 +76,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - CHF</h1>
-                <h5>Rate: ${props.CHF}</h5>
+                <h5>Rate: CHf{props.CHF}</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -85,7 +85,7 @@ const Forexcard = props => {
             <Card id='datacard'>
               <Card.Body>
                 <h1>USD - SEK</h1>
-                <h5>Rate: ${props.SEK}</h5>
+                <h5>Rate: kr{props.SEK}</h5>
               </Card.Body>
             </Card>
           </Col>
