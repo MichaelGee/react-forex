@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 body{
   font-family: 'Merriweather', serif;
 }
 
-.navbar{
+nav, .navbar{
   background: #2950ff !important;
- 
 }
 
 .navbar, a{
   color: white !important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navbarLink{
@@ -33,13 +34,34 @@ img{
 }
 
 .datacard{
-  margin-top: 20px;
+  margin: 1px;
 }
 
-#datacard{
-  margin-top: 20px;
-}
 
 Link, p, h5{
-  font-family: 'Noto Serif', serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.Welcard{
+  margin: 250px auto;
+  overflow: hidden;
+  width: 80%;
+  text-align: center;
+}
+
+Button{
+  margin: 5px;
+}
+h3{
+  margin:0;
+}
+
+.card{
+  background : #ffffff !important;
+  width: 100%;
+  height: auto;
+}
+
+.welcome{
+  font-size: 1.5rem;
 }

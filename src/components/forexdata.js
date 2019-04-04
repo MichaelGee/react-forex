@@ -7,7 +7,6 @@ export default class Forexdata extends Component {
     time: "",
     NGN: "",
     EUR: "",
-    CNH: "",
     JPY: "",
     GBP: "",
     AUD: "",
@@ -32,7 +31,6 @@ export default class Forexdata extends Component {
           time: res.headers.date,
           NGN: res.data.rates.USDNGN.rate,
           EUR: res.data.rates.USDEUR.rate,
-          CNH: res.data.rates.USDCNH.rate,
           JPY: res.data.rates.USDJPY.rate,
           GBP: res.data.rates.USDGBP.rate,
           AUD: res.data.rates.USDAUD.rate,
@@ -55,7 +53,6 @@ export default class Forexdata extends Component {
         <Forexcard
           NGN={this.state.NGN}
           EUR={this.state.EUR}
-          CNH={this.state.CNH}
           JPY={this.state.JPY}
           GBP={this.state.GBP}
           AUD={this.state.AUD}

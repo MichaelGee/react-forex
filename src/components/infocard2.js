@@ -8,10 +8,10 @@ const style = {
 const Infocard2 = props => {
   return (
     <div>
-      <Card style={style.card}>
+      <Card style={style.card} className="shadow p-3 mb-5 bg-white rounded">
         <Card.Body>
           <p className='card-text text-center'>
-            The exchange rate for 10 major currencies and the Nigerian Naira.
+            The exchange rate for 9 major currencies and the Nigerian Naira.
           </p>
           <p className='card-text text-center'>
             Data is updated every 30seconds

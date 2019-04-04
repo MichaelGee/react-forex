@@ -9,7 +9,7 @@ class Infocard extends Component {
   render() {
     return (
       <div>
-        <Card style={style.card}>
+        <Card style={style.card} className="shadow p-3 mb-5 bg-white rounded">
           <Card.Body>
             <p className='card-text text-center'>
               Cryptocurrency rates in the market for 6 major coins.

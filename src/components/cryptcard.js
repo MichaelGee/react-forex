@@ -11,7 +11,7 @@ const Cryptcard = props => {
     <Container>
       <Row>
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={btc} alt='btc_img' />
               <h4>Bitcoin</h4>
@@ -24,7 +24,7 @@ const Cryptcard = props => {
         </Col>
 
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={eth_logo} alt='eth_logo' />
               <h4>Ethereum</h4>
@@ -37,7 +37,7 @@ const Cryptcard = props => {
         </Col>
 
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={ltc} alt='ltc_logo' />
               <h4>Litecom</h4>
@@ -52,7 +52,7 @@ const Cryptcard = props => {
 
       <Row>
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={xrp} alt='xrp_logo' />
               <h4>Ripple</h4>
@@ -65,7 +65,7 @@ const Cryptcard = props => {
         </Col>
 
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={eos_1} alt='eos_logo' />
               <h4>EOS</h4>
@@ -78,7 +78,7 @@ const Cryptcard = props => {
         </Col>
 
         <Col sm>
-          <Card className='datacard'>
+          <Card className='datacard shadow-sm p-3 mb-5 bg-white rounded'>
             <Card.Body>
               <img src={trx} alt='trx_logo' />
               <h4>Tron</h4>
