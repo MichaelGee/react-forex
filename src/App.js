@@ -14,7 +14,6 @@ class App extends Component {
           <Bar />
           <Welcome />
           <Switch>
-            <Route exact path='/' component={Welcome} />
             <Route path='/forex' component={Forex} />
             <Route path='/crypto' component={Crypto} />
           </Switch>
