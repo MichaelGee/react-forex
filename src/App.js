@@ -12,6 +12,7 @@ class App extends Component {
       <Router>
         <div className='App'>
           <Bar />
+          <Welcome />
           <Switch>
             <Route exact path='/' component={Welcome} />
             <Route path='/forex' component={Forex} />
