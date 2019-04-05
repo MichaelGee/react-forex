@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
+          <Welcome />
           <Switch>
             <Route exact path='/' component={Welcome} />
             <Route exact path='/forex' component={Forex} />
