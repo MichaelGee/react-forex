@@ -1,10 +1,11 @@
 import React from "react";
 import { Card, Container, ButtonToolbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import Bar from "./navbar";
 export default () => {
   return (
     <div>
+      <Bar />
       <Container className='Welcard'>
         <Card className='shadow p-3 mb-5 bg-white rounded'>
           <Card.Body>

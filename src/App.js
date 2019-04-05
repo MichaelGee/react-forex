@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import Bar from "./components/navbar";
 import Welcome from "./components/welcome";
 import Forex from "./components/pages/forex";
 import Crypto from "./components/pages/crypto";
@@ -11,10 +10,9 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Bar />
-          <Welcome />
           <Switch>
-            <Route path='/forex' component={Forex} />
+            <Route exact path='/' component={Welcome} />
+            <Route exact path='/forex' component={Forex} />
             <Route path='/crypto' component={Crypto} />
           </Switch>
         </div>

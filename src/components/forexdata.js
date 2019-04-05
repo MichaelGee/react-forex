@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Infocard2 from "./infocard2";
 import Forexcard from "./forexcard";
+import Bar from "./navbar";
 export default class Forexdata extends Component {
   state = {
     time: "",
@@ -49,6 +50,7 @@ export default class Forexdata extends Component {
   render() {
     return (
       <div>
+        <Bar />
         <Infocard2 time={this.state.time} />
         <Forexcard
           NGN={this.state.NGN}
