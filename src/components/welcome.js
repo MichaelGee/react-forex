@@ -1,35 +1,22 @@
-import React from "react";
-import { Card, Container, ButtonToolbar, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Bar from "./navbar";
-export default () => {
-  return (
-    <div>
-      <Bar />
-      <Container className='Welcard'>
-        <Card className='shadow p-3 mb-5 bg-white rounded'>
-          <Card.Body>
-            <p className='welcome'>
-              Wecome to Exchange!
-              <br />
-              You can get the latest updates from the top Currencies and
-              Cryptocurrencies.
-            </p>
-            <ButtonToolbar className='d-flex justify-content-center'>
-              <Link to='/forex'>
-                <Button variant='primary' size='md'>
-                  Forex
-                </Button>
-              </Link>
-              <Link to='/crypto'>
-                <Button variant='primary' size='md'>
-                  Cryptocurrency
-                </Button>
-              </Link>
-            </ButtonToolbar>
-          </Card.Body>
-        </Card>
-      </Container>
-    </div>
-  );
-};
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Forex from "./pages/forex";
+import Crypto from "./pages/crypto";
+
+class Welcome extends Component {
+  render() {
+    return (
+      <Router>
+        <div className='App'>
+          <Switch>
+            <Route exact path='/' component={Forex} />
+            <Route exact path='/forex' component={Forex} />
+            <Route path='/crypto' component={Crypto} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
+}
+
+export default Welcome;
