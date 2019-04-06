@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/react-forex/static/js/runtime~main.de479fca.js"
   },
   {
-    "revision": "38e0cbd2a3041c25633d",
-    "url": "/react-forex/static/js/main.31501906.chunk.js"
+    "revision": "2695d13e6b33694c23b9",
+    "url": "/react-forex/static/js/main.550a1825.chunk.js"
   },
   {
-    "revision": "e568860ef04dd860824c",
-    "url": "/react-forex/static/js/2.c5ae47e0.chunk.js"
+    "revision": "dc20cc0828a528d18acb",
+    "url": "/react-forex/static/js/2.81b545d9.chunk.js"
   },
   {
-    "revision": "38e0cbd2a3041c25633d",
+    "revision": "2695d13e6b33694c23b9",
     "url": "/react-forex/static/css/main.f1d7b804.chunk.css"
   },
   {
-    "revision": "5fac45c42b49fbc7280f114c26e20d91",
+    "revision": "566bea87213df3dd442b1467bdc1275d",
     "url": "/react-forex/index.html"
   }
 ];
