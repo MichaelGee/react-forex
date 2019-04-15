@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-forex/static/css/main.f1d7b804.chunk.css",
-  "main.js": "/react-forex/static/js/main.0252ea49.chunk.js",
-  "main.js.map": "/react-forex/static/js/main.0252ea49.chunk.js.map",
+  "main.css": "/react-forex/static/css/main.6fbe7712.chunk.css",
+  "main.js": "/react-forex/static/js/main.3a028e19.chunk.js",
+  "main.js.map": "/react-forex/static/js/main.3a028e19.chunk.js.map",
   "runtime~main.js": "/react-forex/static/js/runtime~main.de479fca.js",
   "runtime~main.js.map": "/react-forex/static/js/runtime~main.de479fca.js.map",
   "static/js/2.84dc7ac3.chunk.js": "/react-forex/static/js/2.84dc7ac3.chunk.js",
   "static/js/2.84dc7ac3.chunk.js.map": "/react-forex/static/js/2.84dc7ac3.chunk.js.map",
   "index.html": "/react-forex/index.html",
-  "precache-manifest.23c3c446254c291b23c4f03d79a31f65.js": "/react-forex/precache-manifest.23c3c446254c291b23c4f03d79a31f65.js",
+  "precache-manifest.24a0ea6a6fd39ed5371510dbe5584cbf.js": "/react-forex/precache-manifest.24a0ea6a6fd39ed5371510dbe5584cbf.js",
   "service-worker.js": "/react-forex/service-worker.js",
-  "static/css/main.f1d7b804.chunk.css.map": "/react-forex/static/css/main.f1d7b804.chunk.css.map",
+  "static/css/main.6fbe7712.chunk.css.map": "/react-forex/static/css/main.6fbe7712.chunk.css.map",
   "static/media/btc.png": "/react-forex/static/media/btc.5fde3824.png",
   "static/media/ltc.png": "/react-forex/static/media/ltc.179c7c19.png"
 }
