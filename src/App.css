@@ -34,7 +34,15 @@ img{
 }
 
 .datacard{
-  margin: 1px;
+  margin-bottom: 5px !important;
+}
+
+.datacard, h1{
+  font-size: 1.5rem;
+}
+
+.datacard, h5{
+  font-size: 1rem;
 }
 
 
@@ -65,3 +73,31 @@ h3{
 .welcome{
   font-size: 1.5rem;
 }
+
+@media screen and (max-width : 576px){
+  .datacard, h1{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width : 576px){
+  .datacard{
+    padding: 1px !important;
+  }
+  .datacard, h1{
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    
+  }
+  .card, p{
+    font-size: 0.8rem;
+  }
+  .card{
+    padding: 1px !important;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
