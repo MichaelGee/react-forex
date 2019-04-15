@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
-import Welcome from "./components/welcome";
+import Bar from "./components/navbar";
+import Forex from "./components/pages/forex";
+import Crypto from "./components/pages/crypto";
 
 class App extends Component {
   render() {
-    return <Welcome />;
+    return (
+      <div>
+        <Bar />
+        <Forex />
+        <Crypto />
+      </div>
+    );
   }
 }
 

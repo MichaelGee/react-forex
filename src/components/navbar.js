@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 import "../App.css";
 
 class Bar extends Component {
@@ -7,9 +7,9 @@ class Bar extends Component {
     return (
       <div>
         <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <Link to='/'>
+          <a href='#'>
             <h3>Exchange</h3>
-          </Link>
+          </a>
           <button
             className='navbar-toggler'
             type='button'
@@ -23,12 +23,8 @@ class Bar extends Component {
           </button>
           <div className='collapse navbar-collapse navbarLink' id='navbarNav'>
             <ul className='navbar-nav'>
-              <li className='nav-item active' id='forex'>
-                <Link to='/forex'>Forex</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/crypto'>Crypto</Link>
-              </li>
+              <li className='nav-item active' id='forex' />
+              <li className='nav-item' />
             </ul>
           </div>
         </nav>

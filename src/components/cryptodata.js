@@ -3,7 +3,6 @@ import Cryptcard from "./cryptcard";
 /*import { Line } from "react-chartjs-2";*/
 import axios from "axios";
 import Infocard1 from "./infocard1";
-import Bar from "./navbar";
 class Cryptodata extends Component {
   state = {
     time: "",
@@ -82,7 +81,6 @@ class Cryptodata extends Component {
     return (
       <div>
         {/*<Line data={data} />*/}
-        <Bar />
         <Infocard1 time={this.state.time} />
         <Cryptcard
           BTC_PRICE={this.state.BTC_PRICE}
